@@ -1,0 +1,96 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'TimerPyQt5.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.2
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(252, 139)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.stop = QtWidgets.QPushButton(self.centralwidget)
+        self.stop.setGeometry(QtCore.QRect(146, 100, 61, 23))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.stop.setFont(font)
+        self.stop.setObjectName("stop")
+        self.minute = QtWidgets.QLineEdit(self.centralwidget)
+        self.minute.setGeometry(QtCore.QRect(46, 50, 41, 20))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(10)
+        self.minute.setFont(font)
+        self.minute.setAlignment(QtCore.Qt.AlignCenter)
+        self.minute.setObjectName("minute")
+        self.second = QtWidgets.QLineEdit(self.centralwidget)
+        self.second.setGeometry(QtCore.QRect(156, 50, 41, 20))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(10)
+        self.second.setFont(font)
+        self.second.setAlignment(QtCore.Qt.AlignCenter)
+        self.second.setObjectName("second")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(36, 30, 61, 16))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(12)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(156, 30, 61, 16))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(12)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(76, 10, 121, 16))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(12)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.timer = QtWidgets.QLabel(self.centralwidget)
+        self.timer.setGeometry(QtCore.QRect(95, 70, 56, 20))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setWeight(75)
+        self.timer.setFont(font)
+        self.timer.setObjectName("timer")
+        self.start = QtWidgets.QPushButton(self.centralwidget)
+        self.start.setGeometry(QtCore.QRect(40, 100, 61, 23))
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.start.setFont(font)
+        self.start.setObjectName("start")
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.stop.setText(_translate("MainWindow", "Stop"))
+        self.label.setText(_translate("MainWindow", "Minutes"))
+        self.label_2.setText(_translate("MainWindow", "Seconds"))
+        self.label_3.setText(_translate("MainWindow", "Put the time"))
+        self.timer.setText(_translate("MainWindow", "00:00"))
+        self.start.setText(_translate("MainWindow", "Start"))
